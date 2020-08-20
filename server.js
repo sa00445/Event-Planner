@@ -1,8 +1,22 @@
 const http = require('http');
-const server = http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-type': 'text/plain'});
-    console.log(req.url);
-    res.end("Hello");
+const fs = require('fs');
+const path = require('path');
+
+const homePage = fs.readFileSync('index.html');
+const aboutPage = fs.readFileSync('about.html');
+const notFoundPage = fs.readFileSync('notfound.html');
+// const homePage = fs.readFileSync('index.html');
+// const homePage = fs.readFileSync('index.html');
+
+const server = http.createServer((req,res) => {
+    if (req.url === "/") {
+        res.end(homePage);
+    } else if (req.url === "/about") {
+        res.end(aboutPage);
+    } else {
+        res.writeHead(404);
+        res.end(notFoundPage);
+    }
 });
 
 server.listen(3000)
