@@ -4,11 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main Styling */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* Utility Classes */
+
+
+
+        /* Header */
+
+
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: crimson;
+        }
+
+        nav ul.nav-links {
+            /* justify-content: flex-end; */
+            display: flex;
+        }
+
+        nav ul.nav-links li {
+            flex-direction: row;
+            list-style: none;
+            margin-left: 15px;
+        }
+
+        nav ul.nav-links li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul.nav-links li a.active {
+            padding: 20px;
+            background-color: maroon;
+        }
+
+        /* SectionName */
+
+
+        /* Footer */
+    </style>
 </head>
 
 <body>
-
+    <header>
+        <nav>
+            <div id="logo">eventHal</div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a class="active" href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome</h2>
+    </section>
 </body>
 
 </html>
