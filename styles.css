@@ -1,0 +1,57 @@
+ /* Reset */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Main Styling */
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+ /* Utility Classes */
+
+
+
+ /* Header */
+
+
+
+ /* Navbar */
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     background-color: crimson;
+ }
+
+
+ nav ul.nav-links {
+     /* justify-content: flex-end; */
+     display: flex;
+ }
+
+ nav ul.nav-links li {
+     flex-direction: row;
+     list-style: none;
+     margin-left: 15px;
+ }
+
+ nav ul.nav-links li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ nav ul.nav-links li a.active {
+     padding: 20px;
+     background-color: maroon;
+ }
+
+ /* SectionName */
+
+
+ /* Footer */
