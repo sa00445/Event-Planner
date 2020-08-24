@@ -15,6 +15,10 @@
     }
 
     /* Main Styling */
+    body,
+    html {
+      height: 100%;
+    }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +31,27 @@
 
     /* Header */
 
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+      height: 50%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      padding-top: 500px;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
 
 
     /* Navbar */
@@ -76,9 +101,15 @@
         <li><a href="./contact.html">Contact Us</a></li>
       </ul>
     </nav>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Har Event Asaan</h1>
+        <p>Your one stop shop for all events</p>
+        <a href="./about.html" class="button"></a>
+      </div>
+    </div>
   </header>
   <section>
-    <h2>Welcome</h2>
   </section>
 </body>
 
